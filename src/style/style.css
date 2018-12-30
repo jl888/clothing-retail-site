@@ -1,0 +1,252 @@
+@media only screen and (max-width: 991px) {
+  /* For mobiles, small tablets */
+  .main-display {
+    width: 92%;
+    margin: 0 auto;
+  }
+
+  .dropdown-content-top-border {
+    width: calc(100vw * 0.92 - 49px);
+    border-top: 1px solid #CCCCCC;
+  }
+
+  .desktop-my-cart-text {
+    display: none;
+  }
+
+  .mobile-my-cart-text {
+    display: inline-block;
+  }
+
+  .product-dividers {
+    display: none;
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    background-color: #FFFFFF;
+    width: calc(100vw * 0.92);
+    right: 0px;
+  }
+
+  .product-image-wrapper {
+    padding: 0 0 30px 0;
+  }
+
+  .product-image {
+    text-align: center;
+    width: 100%;
+  }
+
+  .product-details {
+    display: inline-block;
+    padding: 0;
+  }
+
+  .product-wrapper {
+    margin-bottom: 25px;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  /* For desktops, large tablets */
+  .main-display {
+    width: 77%;
+    margin: 0 auto;
+  }
+
+  .product-details {
+    display: inline-block;
+    padding: 0 0 0 90px;
+  }
+
+  .product-image-wrapper {
+    display: inline-block;
+    padding: 5px 0 0 90px;
+  }
+
+  .add-to-cart-button:hover {
+    color: #FFFFFF;
+    background-color: #222222;
+  }
+
+  .glyphicon-shopping-cart, .mobile-my-cart-text {
+    display: none;
+  }
+
+  .dropdown-content-top-border {
+    width: 226px;
+    border-top: 1px solid #CCCCCC;
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    background-color: #FFFFFF;
+    width: 300px;
+    right: 0px;
+  }
+
+  .product-image {
+    width: calc(100vw * 0.29);
+  }
+
+  .product-wrapper {
+    margin-bottom: 50px;
+  }
+}
+
+
+.header {
+  margin-top: 15px;
+  height: 30px;
+  background-color: #F6F6F7;
+  line-height: 30px;
+}
+
+.light-text {
+  color: #888888;
+}
+
+.dark-text {
+  color: #222222;
+}
+
+.my-cart {
+  font-size: 11px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.required-star {
+  color: #C90000;
+}
+
+.product-wrapper {
+  margin-top: 32px;
+}
+
+.product-title {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.product-price {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.product-description {
+  margin-top: 20px;
+  font-size: 13px;
+}
+
+.product-sizes {
+  margin-top: 40px;
+}
+
+.product-size-title {
+  display: flex;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.product-size-tiles {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+
+.product-size-tile {
+  width: 40px;
+  height: 40px;
+  border: 1px solid #CCCCCC;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 40px;
+  margin-right: 5px;
+  cursor: pointer;
+  font-weight: 400;
+  font-size: 10px;
+}
+
+.product-size-selected-text {
+  padding-left: 6px;
+  font-weight: 600px;
+}
+
+.add-to-cart-button {
+  margin-top: 20px;
+  border: 2px solid #222222;
+  font-weight: 500;
+  width: 140px;
+  height: 35px;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 30px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content-item {
+  padding: 0 20px 20px 20px;
+}
+
+.dropdown:hover .dropdown-content { 
+  display: block; 
+}
+
+.dropdown-button {
+  background-color: #F6F6F7;
+  border: none;
+  height: 30px;
+  display: flex;
+}
+
+.dropdown:hover .dropdown-button {
+  color: #222222;
+  background-color: #FFFFFF;
+  border-top: 1px solid #CCCCCC;
+  border-left: 1px solid #CCCCCC;
+  border-right: 1px solid #CCCCCC;
+}
+
+.dropdown:hover .dropdown-content {
+  top: 30px;
+  border-bottom: 1px solid #CCCCCC;
+  border-left: 1px solid #CCCCCC;
+  border-right: 1px solid #CCCCCC;
+}
+
+.dropdown-content-item {
+  display: flex;
+}
+
+.dropdown-content-item-text {
+  padding-left: 25px;
+  font-size: 13px;
+}
+
+.dropdown-content-top-border {
+  display: flex;
+  padding-top: 20px;
+}
+
+.glyphicon-shopping-cart {
+  padding: 8px 6px 0 0;
+}
+
+.empty-cart-text {
+  text-align: center;
+  width: 100%;
+  padding-left: 0 !important;
+}

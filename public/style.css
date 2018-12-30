@@ -1,0 +1,17 @@
+/* This file is used primarily for global styles */
+
+html {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  margin: 0 !important;
+}
+
+button:focus {
+  outline: 0;
+}
+
+hr {
+  margin: 10px 0px 5px 0px !important;
+}
