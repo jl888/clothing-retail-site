@@ -2,12 +2,14 @@
   /* For mobiles, small tablets */
   .main-display {
     width: 92%;
-    margin: 0 auto;
+  }
+
+  .dropdown-button {
+    width: 51px;
   }
 
   .dropdown-content-top-border {
-    width: calc(100vw * 0.92 - 49px);
-    border-top: 1px solid #CCCCCC;
+    width: calc(100vw * 0.92 - 51px);
   }
 
   .desktop-my-cart-text {
@@ -23,10 +25,6 @@
   }
 
   .dropdown-content {
-    display: none;
-    position: absolute;
-    z-index: 1;
-    background-color: #FFFFFF;
     width: calc(100vw * 0.92);
     right: 0px;
   }
@@ -46,7 +44,7 @@
   }
 
   .product-wrapper {
-    margin-bottom: 25px;
+    margin-bottom: 25px !important;
   }
 }
 
@@ -54,7 +52,14 @@
   /* For desktops, large tablets */
   .main-display {
     width: 77%;
-    margin: 0 auto;
+  }
+
+  .dropdown-button {
+    width: 76px;
+  }
+
+  .dropdown-content-top-border {
+    width: 224px;
   }
 
   .product-details {
@@ -76,16 +81,7 @@
     display: none;
   }
 
-  .dropdown-content-top-border {
-    width: 226px;
-    border-top: 1px solid #CCCCCC;
-  }
-
   .dropdown-content {
-    display: none;
-    position: absolute;
-    z-index: 1;
-    background-color: #FFFFFF;
     width: 300px;
     right: 0px;
   }
@@ -95,10 +91,18 @@
   }
 
   .product-wrapper {
-    margin-bottom: 50px;
+    margin-bottom: 50px !important;
   }
 }
 
+
+.main-display {
+  margin: 0 auto;
+}
+
+.dropdown-content-top-border {
+  border-top: 1px solid #CCCCCC;
+}
 
 .header {
   margin-top: 15px;
@@ -201,8 +205,19 @@
   padding: 0 20px 20px 20px;
 }
 
+.dropdown-content {
+  display: none;
+  position: absolute;
+  z-index: 1;
+  background-color: #FFFFFF;
+}
+
 .dropdown:hover .dropdown-content { 
   display: block; 
+  top: 30px;
+  border-bottom: 1px solid #CCCCCC;
+  border-left: 1px solid #CCCCCC;
+  border-right: 1px solid #CCCCCC;
 }
 
 .dropdown-button {
@@ -216,13 +231,6 @@
   color: #222222;
   background-color: #FFFFFF;
   border-top: 1px solid #CCCCCC;
-  border-left: 1px solid #CCCCCC;
-  border-right: 1px solid #CCCCCC;
-}
-
-.dropdown:hover .dropdown-content {
-  top: 30px;
-  border-bottom: 1px solid #CCCCCC;
   border-left: 1px solid #CCCCCC;
   border-right: 1px solid #CCCCCC;
 }
